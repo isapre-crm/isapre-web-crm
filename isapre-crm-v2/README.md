@@ -45,3 +45,14 @@ Sube los archivos del proyecto a tu repositorio privado. En Cloudflare Pages, co
 - El CRM v2 inicial permite ver prospectos y cambiar estados, no contiene todavía exportación, bitácora visual, notificaciones ni gestión completa de usuarios.
 - No hay respaldo automático incluido en esta entrega. Diseña y prueba respaldos antes de usarlo en producción.
 - No se ha desplegado ni conectado a cuentas reales desde este entorno.
+
+## v2.1: Permisos individuales
+
+1. Antes de modificar el despliegue, realiza un respaldo de Supabase y verifica la política de acceso de los prospectos.
+2. Ejecuta `supabase/migration_v2_1.sql` una sola vez en SQL Editor. Esta migración revoca el RPC público de captación mientras se incorpora un endpoint protegido con Turnstile y límites de solicitudes.
+3. Sube `src/main.tsx`, `src/vite-env.d.ts` y `supabase/migration_v2_1.sql` al repositorio GitHub, respetando la ruta `isapre-crm-v2/`.
+4. Despliega el commit nuevo en Cloudflare. Las variables VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY se mantienen.
+5. En Authentication > Users, crea usuarios con credenciales temporales por un canal seguro. Copia su UID. En CRM > Usuarios y permisos, registra su UID, nombre y rol y configura los permisos.
+6. Verifica con dos usuarios distintos que cada uno ve solo los prospectos permitidos. Las políticas RLS son la fuente de verdad.
+
+Limitaciones deliberadas: esta versión NO envía invitaciones por correo desde el CRM, NO permite a otros usuarios administrar cuentas aunque el campo esté reservado y NO activa el formulario público hasta disponer de endpoint antispam. Los permisos `view_reports` quedan almacenados para una futura pantalla de reportes. La vista de prospectos muestra como máximo 300 registros y debe incorporar paginación antes de producción a escala. La gestión de usuarios no permite asignar el rol admin por RPC. No subir claves secretas ni contraseñas a GitHub.
