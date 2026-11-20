@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import type { SupabaseClient } from '@supabase/supabase-js';
-import { type SiteContent } from './siteContent';
+import { mergeSiteContent, type SiteContent } from './siteContent';
 import './crm-v31-editor.css';
 const sectionLabels: Record<string,string> = {"brand": "Identidad y navegación", "hero": "Portada principal", "isapres": "Franja de Isapres", "contact": "Formulario de contacto", "whatsapp": "WhatsApp", "footer": "Pie de página", "appearance": "Diseño y visibilidad"};
 const pretty = (key:string) => key.replace(/([a-z])([A-Z])/g,'$1 $2').replace(/^./,x=>x.toUpperCase());
