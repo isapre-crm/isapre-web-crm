@@ -69,8 +69,12 @@ function IsapresMarquee() {
       <div className="isapres-track">
         {[0, 1].map(copy => <div className="isapres-group" key={copy} aria-hidden={copy === 1}>
           {isapreBrands.map(brand => <div className={'isapres-brand isapres-brand--' + brand.slug} key={brand.slug}>
-            <img className="isapres-brand-icon" src={'https://www.google.com/s2/favicons?domain=' + brand.domain + '&sz=128'} alt="" loading="lazy" onError={e => { e.currentTarget.style.display = 'none'; }} />
-            <span>{brand.name}</span>
+            {brand.slug === 'banmedica' || brand.slug === 'nuevamasvida' ? (
+              <img className="isapres-brand-logo" src={'/logos/' + brand.slug + '.png'} alt={brand.name} loading="lazy" />
+            ) : <>
+              <img className="isapres-brand-icon" src={'https://www.google.com/s2/favicons?domain=' + brand.domain + '&sz=128'} alt="" loading="lazy" onError={e => { e.currentTarget.style.display = 'none'; }} />
+              <span>{brand.name}</span>
+            </>}
           </div>)}
         </div>)}
       </div>

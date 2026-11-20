@@ -14,3 +14,8 @@
 @keyframes isapres-scroll{to{transform:translateX(-50%)}}
 @media(max-width:600px){.isapres-section{padding:38px 0 30px}.isapres-brand{width:170px;min-height:76px;font-size:15px;gap:8px}.isapres-brand-icon{width:26px;height:26px}.isapres-group{gap:12px;padding-right:12px}.isapres-track{animation-duration:27s}.isapres-disclaimer{padding:0 18px}}
 @media(prefers-reduced-motion:reduce){.isapres-track{animation:none}.isapres-marquee{overflow-x:auto;mask-image:none;-webkit-mask-image:none}.isapres-group:nth-child(2){display:none}}
+
+/* v3.0.3: logotipos proporcionados para Banmédica y Nueva Masvida */
+.isapres-brand--banmedica,.isapres-brand--nuevamasvida{padding:12px 15px}
+.isapres-brand-logo{display:block;width:100%;max-width:175px;height:58px;object-fit:contain;object-position:center}
+@media(max-width:600px){.isapres-brand-logo{max-width:145px;height:52px}}
