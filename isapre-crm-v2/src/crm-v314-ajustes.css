@@ -1,0 +1,8 @@
+/* Tu Salud Primero v3.1.4 - estado de guardado del prospecto */
+.crm-status-saving {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #087f9f;
+}
