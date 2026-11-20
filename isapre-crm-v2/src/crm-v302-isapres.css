@@ -1,0 +1,16 @@
+/* Tu Salud Primero v3.0.2 — cinta de marcas informativa */
+.isapres-section{padding:52px 0 40px;background:linear-gradient(180deg,#f5fafb 0%,#fff 100%);overflow:hidden}
+.isapres-heading{text-align:center;margin-bottom:27px}
+.isapres-heading h2{font-size:clamp(25px,3.1vw,36px);line-height:1.18;color:#18344e;margin:8px 0}
+.isapres-heading p{color:#597184;margin:0}
+.isapres-marquee{width:100%;overflow:hidden;mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent)}
+.isapres-track{display:flex;width:max-content;animation:isapres-scroll 32s linear infinite;will-change:transform}
+.isapres-marquee:hover .isapres-track,.isapres-marquee:focus-within .isapres-track{animation-play-state:paused}
+.isapres-group{display:flex;align-items:center;gap:18px;padding-right:18px;flex-shrink:0}
+.isapres-brand{width:205px;min-height:86px;box-sizing:border-box;background:#fff;border:1px solid #e0e9ee;border-radius:18px;box-shadow:0 7px 22px rgba(23,58,75,.06);display:flex;align-items:center;justify-content:center;gap:12px;padding:18px 16px;color:#17364b;font-weight:800;font-size:18px;white-space:nowrap}
+.isapres-brand-icon{width:32px;height:32px;object-fit:contain;flex-shrink:0}
+.isapres-brand--consalud{color:#078d9b}.isapres-brand--colmena{color:#d49317}.isapres-brand--cruzblanca{color:#187cb1}.isapres-brand--banmedica{color:#2476a9}.isapres-brand--nuevamasvida{color:#267a59}.isapres-brand--vidatres{color:#43599a}.isapres-brand--esencial{color:#6853a0}
+.isapres-disclaimer{text-align:center;color:#788b97;font-size:12px;line-height:1.5;margin-top:20px!important}
+@keyframes isapres-scroll{to{transform:translateX(-50%)}}
+@media(max-width:600px){.isapres-section{padding:38px 0 30px}.isapres-brand{width:170px;min-height:76px;font-size:15px;gap:8px}.isapres-brand-icon{width:26px;height:26px}.isapres-group{gap:12px;padding-right:12px}.isapres-track{animation-duration:27s}.isapres-disclaimer{padding:0 18px}}
+@media(prefers-reduced-motion:reduce){.isapres-track{animation:none}.isapres-marquee{overflow-x:auto;mask-image:none;-webkit-mask-image:none}.isapres-group:nth-child(2){display:none}}
