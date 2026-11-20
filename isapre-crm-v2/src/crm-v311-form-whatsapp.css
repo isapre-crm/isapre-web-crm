@@ -1,0 +1,9 @@
+/* v3.1.1: WhatsApp conserva su verde de marca incluso con temas CMS */
+.cms-public .whatsapp-contact-button,
+.cms-public .whatsapp-contact-button:visited { background:#25D366 !important; color:#073b20 !important; }
+.cms-public .whatsapp-contact-button:hover { background:#1ebe59 !important; }
+.cms-public .whatsapp-contact-icon { background:#e6f8ec !important; color:#128c47 !important; }
+.cms-public .whatsapp-floating,
+.cms-public .whatsapp-floating:visited { background:#25D366 !important; color:#073b20 !important; }
+.cms-public .whatsapp-floating:hover { background:#1ebe59 !important; }
+.cms-public .whatsapp-contact-card .eyebrow { color:#128c47 !important; }
