@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createClient, type Session } from '@supabase/supabase-js';
-import { HeartPulse, MessageCircle, ShieldCheck, Users, LogOut, ArrowRight, Phone, FileText, CalendarClock, CheckCircle2, X, Clock3 } from 'lucide-react';
+import { HeartPulse, MessageCircle, ShieldCheck, Users, LogOut, ArrowRight, Phone, FileText, CalendarClock, CheckCircle2, X } from 'lucide-react';
 import './style.css';
 import './crm-v23.css';
 import './crm-v24.css';
