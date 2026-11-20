@@ -50,6 +50,11 @@ export const defaultSiteContent = {
     "message": "Hola, vengo desde la página Tu Salud Primero y me gustaría recibir asesoría sobre planes de salud.",
     "floatingLabel": "WhatsApp"
   },
+  "navigation": {"plans":"Planes y asesoría","how":"Cómo funciona","faq":"Preguntas frecuentes","quote":"Cotizador guiado","contact":"Contacto"},
+  "commercial": {"eyebrow":"ORIENTACIÓN PERSONALIZADA","title":"Compara tus alternativas con información clara","description":"Conoce los aspectos importantes de un plan de salud antes de decidir.","cta":"Comenzar cotización","showCommercial":true},
+  "steps": {"eyebrow":"ASÍ FUNCIONA","title":"Tu asesoría en tres pasos","step1Title":"Cuéntanos qué necesitas","step1Body":"Completa el formulario con tus datos de contacto y preferencias generales.","step2Title":"Revisamos alternativas","step2Body":"Un asesor revisará contigo opciones y condiciones disponibles.","step3Title":"Decide con información","step3Body":"Evalúa coberturas, prestadores y costos antes de contratar.","showSteps":true},
+  "faq": {"title":"Preguntas frecuentes","q1":"¿La asesoría garantiza un precio o cobertura?","a1":"No. Las condiciones dependen de cada Isapre y plan vigente; confirma siempre la información contractual.","q2":"¿Qué debo revisar antes de contratar?","a2":"Red de prestadores, cobertura hospitalaria y ambulatoria, copagos, topes, restricciones y precio final.","q3":"¿Debo compartir antecedentes médicos aquí?","a3":"No. Este formulario no solicita diagnósticos ni antecedentes médicos.","q4":"¿La solicitud implica contratar un plan?","a4":"No. Solo permite que un asesor se comunique contigo.","showFaq":true},
+  "quote": {"eyebrow":"COTIZADOR GUIADO","title":"Cuéntanos tus preferencias","description":"Responde tres preguntas generales y luego deja tus datos para recibir orientación.","button":"Comenzar","showQuote":true},
   "footer": {
     "text": "Tu Salud Primero · Sitio de asesoría independiente · CRM v3.1 · Entorno de pruebas"
   },
